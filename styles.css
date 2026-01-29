@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #c0c0c0;
+    font-style: italic;
+}
+
+#quiz-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+#question-container {
+    margin-bottom: 30px;
+}
+
+#question-text {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    color: #ffd700;
+    line-height: 1.4;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    color: #f0f0f0;
+    padding: 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-family: 'Georgia', serif;
+}
+
+.answer-btn:hover {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: #ffd700;
+    transform: translateX(10px);
+}
+
+#progress {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #c0c0c0;
+}
+
+#result-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+#result-container h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffd700;
+}
+
+#house-result {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.gryffindor {
+    background: linear-gradient(135deg, #740001 0%, #ae0001 100%);
+    border: 3px solid #ffc500;
+    color: #ffc500;
+}
+
+.ravenclaw {
+    background: linear-gradient(135deg, #0e1a40 0%, #222f5b 100%);
+    border: 3px solid #946b2d;
+    color: #946b2d;
+}
+
+.hufflepuff {
+    background: linear-gradient(135deg, #ecb939 0%, #f0c75e 100%);
+    border: 3px solid #000000;
+    color: #000000;
+}
+
+.slytherin {
+    background: linear-gradient(135deg, #1a472a 0%, #2a623d 100%);
+    border: 3px solid #aaaaaa;
+    color: #aaaaaa;
+}
+
+#house-description {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #e0e0e0;
+}
+
+.restart-btn {
+    background: rgba(255, 215, 0, 0.3);
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Georgia', serif;
+    transition: all 0.3s ease;
+}
+
+.restart-btn:hover {
+    background: #ffd700;
+    color: #1a1a2e;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    #question-text {
+        font-size: 1.2em;
+    }
+    
+    .answer-btn {
+        font-size: 1em;
+        padding: 15px;
+    }
+    
+    #house-result {
+        font-size: 2em;
+    }
+}
