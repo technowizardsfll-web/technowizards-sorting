@@ -1,30 +1,30 @@
 // Quiz questions with FLL themes
 const questions = [
     {
-        question: "Your team's robot keeps failing the same mission. What's your approach?",
+        question: "What is your favorite part of FLL?",
         answers: [
-            { text: "Try a completely different, bold design - sometimes you need to take big risks!", house: "gryffindor" },
-            { text: "Research what successful teams did and engineer an optimal solution", house: "ravenclaw" },
-            { text: "Work together to improve it step-by-step, making sure everyone understands", house: "hufflepuff" },
-            { text: "Focus on the missions worth the most points - optimize for maximum score", house: "slytherin" }
+            { text: "Core Values", house: "hufflepuff" },
+            { text: "Innovation Project", house: "gryffindor" },
+            { text: "Robot Design", house: "ravenclaw" },
+            { text: "Robot Game", house: "slytherin" }
         ]
     },
     {
-        question: "It's competition day and you have 5 minutes before your robot run. What do you do?",
+        question: "What Mission is your favorite?",
         answers: [
-            { text: "Go for that risky mission you've only completed once - fortune favors the bold!", house: "gryffindor" },
-            { text: "Review your programmed strategy and mentally simulate the optimal run sequence", house: "ravenclaw" },
-            { text: "Gather the team for encouragement and make sure everyone feels confident", house: "hufflepuff" },
-            { text: "Calculate exact point values and adjust strategy to guarantee maximum scoring", house: "slytherin" }
+            { text: "Silo", house: "gryffindor" },
+            { text: "Angler Artifacts", house: "ravenclaw" },
+            { text: "Mineshaft Explorer", house: "hufflepuff" },
+            { text: "Precious Artifact", house: "slytherin" }
         ]
     },
     {
-        question: "During the Innovation Project, your team disagrees on which problem to solve. How do you decide?",
+        question: "In your opinion, what is the best core value?",
         answers: [
-            { text: "Choose the most challenging problem that others haven't attempted yet", house: "gryffindor" },
-            { text: "Research deeply to find the most innovative and creative solution possible", house: "ravenclaw" },
-            { text: "Pick a problem where everyone can contribute and make a real difference", house: "hufflepuff" },
-            { text: "Select the problem with the clearest path to winning judges' recognition", house: "slytherin" }
+            { text: "Innovation", house: "slytherin" },
+            { text: "Inclusion", house: "hufflepuff" },
+            { text: "Discovery", house: "ravenclaw" },
+            { text: "Impact", house: "gryffindor" }
         ]
     },
     {
