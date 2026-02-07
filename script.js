@@ -28,21 +28,21 @@ const questions = [
         ]
     },
     {
-        question: "A newer team asks for help at the competition. Your robot run is in 30 minutes. What do you do?",
+        question: "Why do you do FLL?",
         answers: [
-            { text: "Dive right in and help them - supporting others is what makes FLL great!", house: "gryffindor" },
-            { text: "Share the technical knowledge that could help them solve their specific issue", house: "ravenclaw" },
-            { text: "Help them together as a team - this embodies Core Values perfectly", house: "hufflepuff" },
-            { text: "Politely offer quick advice but prioritize your own team's preparation", house: "slytherin" }
+            { text: "To challenge myself", house: "gryffindor" },
+            { text: "To learn more about coding and other topics", house: "ravenclaw" },
+            { text: "To be part of a team", house: "hufflepuff" },
+            { text: "For bragging rights", house: "slytherin" }
         ]
     },
     {
-        question: "Your team's robot design works, but another team has a cooler approach. What do you think?",
+        question: "What do you do when faced with a problem?",
         answers: [
-            { text: "We should try building their way - let's push ourselves to match their ambition!", house: "gryffindor" },
-            { text: "Study their innovation and see if we can engineer an even better hybrid solution", house: "ravenclaw" },
-            { text: "Our design works because we built it together - that's what matters most", house: "hufflepuff" },
-            { text: "If ours scores well, stick with it - don't fix what isn't broken", house: "slytherin" }
+            { text: "Immediatley step up and try to solve it", house: "gryffindor" },
+            { text: "Try to help out as much as possible", house: "hufflepuff" },
+            { text: "Make a strategic plan", house: "ravenclaw" },
+            { text: "Make the smart one do it", house: "slytherin" }
         ]
     }
 ];
