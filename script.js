@@ -39,7 +39,7 @@ const questions = [
     {
         question: "What do you do when faced with a problem?",
         answers: [
-            { text: "Immediatley step up and try to solve it", house: "gryffindor" },
+            { text: "Immediately step up and try to solve it", house: "gryffindor" },
             { text: "Try to help out as much as possible", house: "hufflepuff" },
             { text: "Make a strategic plan", house: "ravenclaw" },
             { text: "Make the smart one do it", house: "slytherin" }
