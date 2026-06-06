@@ -10,25 +10,30 @@
     <div class="container">
         <header>
             <h1>🧙‍♂️ TechnoWizards Sorting Ceremony 🤖</h1>
-            <p class="subtitle">Discover your Hogwarts house through FLL wisdom!</p>
+            <p class="subtitle" id="subtitle">Choose your language / Elige tu idioma</p>
         </header>
 
-        <div id="quiz-container">
+        <div id="language-container">
+            <div id="language-grid"></div>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
             <div id="question-container">
                 <h2 id="question-text"></h2>
                 <div id="answers-container"></div>
             </div>
 
             <div id="progress">
-                Question <span id="current-question">1</span> of <span id="total-questions">5</span>
+                <span id="progress-text"></span>
             </div>
         </div>
 
         <div id="result-container" style="display: none;">
-            <h2>You have been sorted into...</h2>
+            <h2 id="sorted-into-text"></h2>
             <div id="house-result"></div>
             <p id="house-description"></p>
-            <button onclick="restartQuiz()" class="restart-btn">Take Quiz Again</button>
+            <button onclick="restartQuiz()" class="restart-btn" id="restart-btn"></button>
+            <button onclick="changeLanguage()" class="language-btn" id="change-language-btn"></button>
         </div>
     </div>
 
