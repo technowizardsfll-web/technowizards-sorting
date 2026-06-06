@@ -19,7 +19,7 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 30px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
@@ -27,18 +27,59 @@ header {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin-bottom: 10px;
     color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .subtitle {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #c0c0c0;
     font-style: italic;
 }
 
+/* Language Selection */
+#language-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+#language-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.language-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    color: #f0f0f0;
+    padding: 15px 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.language-btn:hover {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: #ffd700;
+    transform: scale(1.03);
+}
+
+.flag {
+    font-size: 1.3em;
+}
+
+/* Quiz Container */
 #quiz-container {
     background: rgba(255, 255, 255, 0.08);
     padding: 30px;
@@ -51,7 +92,7 @@ h1 {
 }
 
 #question-text {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 25px;
     color: #ffd700;
     line-height: 1.4;
@@ -67,13 +108,14 @@ h1 {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 215, 0, 0.4);
     color: #f0f0f0;
-    padding: 20px;
-    font-size: 1.1em;
+    padding: 18px;
+    font-size: 1em;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: left;
     font-family: 'Georgia', serif;
+    line-height: 1.4;
 }
 
 .answer-btn:hover {
@@ -89,6 +131,7 @@ h1 {
     color: #c0c0c0;
 }
 
+/* Results */
 #result-container {
     text-align: center;
     background: rgba(255, 255, 255, 0.08);
@@ -98,13 +141,13 @@ h1 {
 }
 
 #result-container h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 30px;
     color: #ffd700;
 }
 
 #house-result {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     margin: 30px 0;
     padding: 30px;
@@ -137,34 +180,55 @@ h1 {
 }
 
 #house-description {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.6;
     margin: 20px 0;
     color: #e0e0e0;
 }
 
-.restart-btn {
+.restart-btn, #change-language-btn {
     background: rgba(255, 215, 0, 0.3);
     border: 2px solid #ffd700;
     color: #ffd700;
-    padding: 15px 40px;
-    font-size: 1.2em;
+    padding: 15px 30px;
+    font-size: 1.1em;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin: 10px 5px;
     font-family: 'Georgia', serif;
     transition: all 0.3s ease;
 }
 
-.restart-btn:hover {
+.restart-btn:hover, #change-language-btn:hover {
     background: #ffd700;
     color: #1a1a2e;
     transform: scale(1.05);
 }
 
+#change-language-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #c0c0c0;
+    color: #c0c0c0;
+}
+
+#change-language-btn:hover {
+    background: #c0c0c0;
+    color: #1a1a2e;
+}
+
 @media (max-width: 600px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+    
+    #language-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .language-btn {
+        padding: 12px 8px;
+        font-size: 0.9em;
     }
     
     #question-text {
@@ -172,7 +236,7 @@ h1 {
     }
     
     .answer-btn {
-        font-size: 1em;
+        font-size: 0.95em;
         padding: 15px;
     }
     
